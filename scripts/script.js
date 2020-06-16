@@ -150,3 +150,14 @@ function calculateLiquidPayment(){
     alert(message);
 }
 btn15.addEventListener('click', calculateLiquidPayment);
+//Decimo sexto item
+var btn16 = document.getElementById('btn1-item16');
+function calculateArea(){
+    var m = Number(document.getElementById('n1-item16').value);
+    var liters = m/3;
+    var cans = Math.ceil(liters/18);
+    var price = 80;
+    var totalCost = price*cans;
+    alert("Latas que deverão ser compradas: "+cans+"\nPreço total: R$"+totalCost);
+}
+btn16.addEventListener('click', calculateArea);
