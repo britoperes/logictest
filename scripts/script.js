@@ -117,3 +117,17 @@ function idealWeightGender(){
 }
 btn13.addEventListener('click', idealWeightGender);
 //Décimo quarto item
+var btn14 = document.getElementById('btn1-item14');
+function calculateFee(){
+    var fishTotal = Number(document.getElementById('n1-item14').value);
+    if(fishTotal>50){
+        var excesso = fishTotal - 50;
+        var multa = (Math.round((excesso*4)*100))/100;
+        var message = 'O total de peixe trazido foi '+fishTotal+"kg";
+        message+= "\nO excesso foi de "+excesso+"kg e a multa é de R$"+multa;
+        alert(message);
+    }else{
+        alert("O total de peixe trazido ("+fishTotal+"kg) não excedeu o limite");
+    }
+}
+btn14.addEventListener('click', calculateFee);
