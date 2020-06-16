@@ -153,7 +153,7 @@ btn15.addEventListener('click', calculateLiquidPayment);
 //Decimo sexto item
 var btn16 = document.getElementById('btn1-item16');
 function calculateArea(){
-    var m = Number(document.getElementById('n1-item16').value);
+    var m = Number(document.getElementById('n1-item16').value);Number(document.getElementById('n1-item16').value);
     var liters = m/3;
     var cans = Math.ceil(liters/18);
     var price = 80;
@@ -161,3 +161,24 @@ function calculateArea(){
     alert("Latas que deverão ser compradas: "+cans+"\nPreço total: R$"+totalCost);
 }
 btn16.addEventListener('click', calculateArea);
+//Décimo setimo item
+var btn17 = document.getElementById("btn1-item17");
+function calculateAreaWithOptions(){
+    var m = Number(document.getElementById('n1-item17').value);
+    var l = m/6;
+    var bcp = 80;//18 litros
+    var scp = 25;//3,6 litros
+    //Apenas latas de 18L
+    var bigCan = Math.ceil(l/18);
+    //Apenas latas de 3,6 litros
+    var smallCan = Math.ceil(l/3.6);
+    //menor preço
+    var litersNew=l*1.1;
+    var bigCanLP = parseInt((litersNew)/18);
+    var smallCanLP = Math.ceil(((litersNew)%18)/3.6);
+    var message = "Apenas latas de 18L - "+bigCan+" latas (R$"+(bigCan*80)+")\n";
+    message+= "(Apenas galoes de 3.6L - "+smallCan+" latas (R$"+(smallCan*25)+")\n";
+    message+= "Misturando latas e galoes - "+bigCanLP+" latas e "+smallCanLP+" galoes (R$"+((bigCanLP*80)+(smallCanLP*25))+")";
+    alert(message);
+}
+btn17.addEventListener('click', calculateAreaWithOptions);
