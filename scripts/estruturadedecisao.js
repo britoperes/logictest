@@ -17,3 +17,20 @@ function validationPositive(){
     number >= 0 ? alert("Maior que zero") : alert("Menor que zero");
 }
 btn2.addEventListener('click', validationPositive);
+//Terceiro item
+var btn3 = document.getElementById('btn1-item3');
+function validationSex(){
+    var input = document.getElementById('t1-item3').value;
+    switch (input) {
+        case "F":
+            alert('Feminino');
+            break;
+        case "M":
+            alert("Masculino");
+    
+        default:
+            alert("Sexo Inválido");
+            break;
+    }
+}
+btn3.addEventListener('click',validationSex);
