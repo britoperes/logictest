@@ -131,3 +131,22 @@ function calculateFee(){
     }
 }
 btn14.addEventListener('click', calculateFee);
+//Decimo quinto item
+var btn15 = document.getElementById('btn1-item15');
+function calculateLiquidPayment(){
+    var hrs = Number(document.getElementById('n1-item15').value);
+    var cost = Number(document.getElementById('n2-item15').value);
+    var gp = hrs*cost;
+    var ir = gp*0.11;
+    var inss = gp*0.08;
+    var sindicate = gp*0.05;
+    var lp = gp - ir - inss - sindicate;
+    var message = "O relatório do pagamento consiste em:\n";
+    message+= "Salário bruto: R$"+gp+"\n";
+    message+="IR: R$"+ir+'\n';
+    message+="INSS: R$"+inss+'\n';
+    message+="Sindicato: R$"+sindicate+'\n';
+    message+="Salario Líquido: R$"+lp;
+    alert(message);
+}
+btn15.addEventListener('click', calculateLiquidPayment);
