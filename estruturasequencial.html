@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Lista de exercícios do Japonês</title>
+</head>
+<body>
+    <header>
+        1. EstruturaSequencial <br>
+        <a href="https://wiki.python.org.br/EstruturaSequencial">Lista de exercícios</a>
+    </header>
+    <main>
+            <li class='item'> <!--Item 1-->
+                1. Faça um Programa que mostre a mensagem "Alo mundo" na tela.
+                <button id='btn-item1'>Executar</button>
+            </li>
+
+            <li class='item'><!--Item 2-->
+                2. Faça um Programa que peça um número e então mostre a mensagem <i>O número informado foi [número].</i>
+                <input type="number" placeholder='Digite um número' id="input-item2">
+                <button id="btn-item2">Executar</button>
+            </li>
+
+            <li class="item"><!--Item 3-->
+                3. Faça um Programa que peça dois números e imprima a soma.
+                <div class="row">
+                    Primeiro número
+                    <input type="number" placeholder='Insira o primeiro número' id="n1-item3">
+                </div>
+                <div class="row">    
+                    Segundo número
+                    <input type="number" placeholder='Insira o segundo número'  id="n2-item3">
+                </div>    
+                <button id="btn-item3">Executar</button>
+            </li>
+
+            <li class="item"><!--Item 4-->
+                4. Faça um Programa que peça as 4 notas bimestrais e mostre a média.
+                <div class="row">
+                    Nota do primeiro bimestre
+                    <input type="number" min='0' max='10' id="n1-item4">
+                </div>
+                <div class="row">
+                    Nota do segundo bimestre
+                    <input type="number" min='0' max='10' id="n2-item4">
+                </div>
+                <div class="row">
+                    Nota do terceiro bimestre
+                    <input type="number" min='0' max='10' id="n3-item4">
+                </div>
+                <div class="row">
+                    Nota do quarto bimestre
+                    <input type="number" min='0' max='10' id="n4-item4">
+                </div>
+                <button id="btn-item4">Executar</button>
+            </li>
+
+            <li class="item"><!--Item 5-->
+                5. Faça um Programa que converta metros para centímetros.
+                <input type="number" placeholder="Insira a medida em metros" id="n1-item5">
+                <button id="btn-item5">Executar</button>
+            </li>
+
+            <li class="item"><!--Item 6-->
+                6. Faça um Programa que peça o raio de um círculo, calcule e mostre sua área.
+                <input type="number" placeholder='Insira o raio' id="n1-item6">
+                <button id="btn-item6">Executar</button>
+            </li>
+
+            <li class="item"><!--Item 7-->
+                7. Faça um Programa que calcule a área de um quadrado, em seguida mostre o dobro desta área para o usuário.
+                <input type="number" placeholder='Insira a medida do quadrado' id="n1-item7">
+                <button id="btn-item7">Executar</button>
+            </li>
+
+            <li class="item"><!--Item 8-->
+                8. Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês.
+                <input type="number" placeholder="Insira o quanto voce ganha por hora" id="n1-item8">
+                <input type="number" placeholder="Insira quantas horas voce trabalha por mes" id="n2-item8">
+                <button id="btn1-item8">Executar</button>
+            </li>
+
+            <li class="item"><!--Item 9-->
+                9. Faça um Programa que peça a temperatura em graus Farenheit, transforme e mostre a temperatura em graus Celsius.
+                <input type="number" placeholder="Insira a temperatura em Farenheit" id="n1-item9">
+                <button id="btn1-item9">Executar</button>
+            </li>
+
+            <li class="item"><!--Item 10-->
+                10. Faça um Programa que peça a temperatura em graus Celsius, transforme e mostre em graus Farenheit.
+                <input type="number" placeholder="Insira a temperatura em Celsius" id="n1-item10">
+                <button id="btn1-item10">Executar</button>
+            </li>
+
+            <li class="item"><!--Item 11-->
+                11. Faça um Programa que peça 2 números inteiros e um número real. Calcule e mostre:
+                <ul>
+                    <li>o produto do dobro do primeiro com metade do segundo;</li>
+                    <li>a soma do triplo do primeiro com o terceiro;</li>
+                    <li>o terceiro elevado ao cubo.</li> 
+                </ul>
+
+                <input type="number" placeholder="Digite o primeiro numero (inteiro)" id="n1-item11">
+                <input type="number" placeholder="Digite o segundo numero (inteiro)" id="n2-item11">
+                <input type="number" placeholder="Digite o terceiro numero (real)" id="n3-item11">
+                <button id="btn1-item11">Executar</button>
+            </li>
+
+            <li class="item"><!--Item 12-->
+                12. Tendo como dados de entrada a altura de uma pessoa, construa um algoritmo que calcule seu peso ideal, usando a seguinte fórmula: (72.7*altura) - 58
+                <input type="number" placeholder="Digite sua altura" id="n1-item12">
+                <button id="btn1-item12">Executar</button>
+            </li>
+
+            <li class="item"><!--Item 13-->
+                13. Tendo como dado de entrada a altura (h) de uma pessoa, construa um algoritmo que calcule seu peso ideal, utilizando as seguintes fórmulas:
+                <br>
+                Para homens: (72.7*h) - 58
+                <br>
+                Para mulheres: (62.1*h) - 44.7
+                <input type="number" placeholder="Digite sua altura" id="n1-item13">
+                <button id="btn1-item13">Executar</button>
+            </li>
+
+            <li class="item"><!--Item 14-->
+                14. João Papo-de-Pescador, homem de bem, comprou um microcomputador para controlar o rendimento diário de seu trabalho. Toda vez que ele traz um peso de peixes maior que o estabelecido pelo regulamento de pesca do estado de São Paulo (50 quilos) deve pagar uma multa de R$ 4,00 por quilo excedente. João precisa que você faça um programa que leia a variável peso (peso de peixes) e calcule o excesso. Gravar na variável excesso a quantidade de quilos além do limite e na variável multa o valor da multa que João deverá pagar. Imprima os dados do programa com as mensagens adequadas.
+                <input type="number" placeholder="Insira a quantidade em quilos de peixe" id="n1-item14">
+                <button id="btn1-item14">Executar</button>
+            </li>
+
+            <li class="item"><!--Item 15-->
+                15. Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês, sabendo-se que são descontados 11% para o Imposto de Renda, 8% para o INSS e 5% para o sindicato, faça um programa que nos dê:
+                <ul>
+                    <li>salário bruto.</li>
+                    <li>quanto pagou ao INSS.</li>
+                    <li>quanto pagou ao sindicato.</li>
+                    <li>o salário líquido.</li>
+                </ul>
+                Calcule os descontos e o salário líquido, conforme a tabela abaixo:
+                <pre>
+                    + Salário Bruto : R$
+                    - IR (11%) : R$
+                    - INSS (8%) : R$
+                    - Sindicato ( 5%) : R$
+                    = Salário Liquido : R$
+                </pre>
+                Obs.: Salário Bruto - Descontos = Salário Líquido.
+                <input type="number" placeholder="Digite o quanto ganha por hora" id="n1-item15">
+                <input type="number" placeholder="Digite quantas horas trabalha no mes" id="n2-item15">
+                <button id="btn1-item15">Executar</button>
+            </li>
+
+            <li class="item"><!--Item 16-->
+                16. Faça um programa para uma loja de tintas. O programa deverá pedir o tamanho em metros quadrados da área a ser pintada. Considere que a cobertura da tinta é de 1 litro para cada 3 metros quadrados e que a tinta é vendida em latas de 18 litros, que custam R$ 80,00. Informe ao usuário a quantidades de latas de tinta a serem compradas e o preço total.
+                <input type="number" placeholder="Digite o tamanho em metros quadrados" id="n1-item16">
+                <button id="btn1-item16">Executar</button>
+            </li>
+
+            <li class="item"><!--Item 17-->
+                17. Faça um Programa para uma loja de tintas. O programa deverá pedir o tamanho em metros quadrados da área a ser pintada. Considere que a cobertura da tinta é de 1 litro para cada 6 metros quadrados e que a tinta é vendida em latas de 18 litros, que custam R$ 80,00 ou em galões de 3,6 litros, que custam R$ 25,00.
+                Informe ao usuário as quantidades de tinta a serem compradas e os respectivos preços em 3 situações:
+                <ul>
+                    <li>comprar apenas latas de 18 litros;</li>
+                    <li>comprar apenas galões de 3,6 litros;</li>
+                    <li>misturar latas e galões, de forma que o preço seja o menor. Acrescente 10% de folga e sempre arredonde os valores para cima, isto é, considere latas cheias.</li>
+                </ul>
+                <input type="number" placeholder="Digite o tamanho em metros quadrados" id="n1-item17">
+                <button id="btn1-item17">Executar</button>
+            </li>
+            
+            <li class="item"> <!--Item 18-->
+                18. Faça um programa que peça o tamanho de um arquivo para download (em MB) e a velocidade de um link de Internet (em Mbps), calcule e informe o tempo aproximado de download do arquivo usando este link (em minutos).
+                <input type="number" placeholder="Digite o tamanho do arquivo em MB" id="n1-item18">
+                <input type="number" placeholder="Digite a velocidade da internet em mbps" id="n2-item18">
+                <button id="btn1-item18">Executar</button>
+            </li>
+    </main> 
+    <script src="/scripts/script.js"></script>   
+</body>
+</html>
