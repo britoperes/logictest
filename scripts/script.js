@@ -99,7 +99,7 @@ function itemEleven(){
     alert(finalMessage);
 }
 btn11.addEventListener('click', itemEleven);
-//Décimo segundo item (72.7*altura) - 58
+//Décimo segundo item (72.7*altura) - 58 - MELHORAR FUNCTION PRA NAO REPETIR
 var btn12 = document.getElementById('btn1-item12');
 function idealWeight(){
     var height = Number(document.getElementById('n1-item12').value);
@@ -107,3 +107,13 @@ function idealWeight(){
     alert('Seu peso ideal é '+ Math.round((iw*100)/100)+'kg');
 }
 btn12.addEventListener('click', idealWeight);
+//Décimo terceiro item
+var btn13 = document.getElementById('btn1-item13');
+function idealWeightGender(){
+    var height = Number(document.getElementById('n1-item13').value);
+    var iwm = Math.round(((72.7 * height)-58)*100)/100;
+    var iww = Math.round(((62.1*height) - 44.7)*100)/100;
+    alert("Pesos ideais: \nHomem: "+iwm+"\nMulher: "+iww);
+}
+btn13.addEventListener('click', idealWeightGender);
+//Décimo quarto item
