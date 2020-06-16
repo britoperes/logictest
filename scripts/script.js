@@ -176,9 +176,18 @@ function calculateAreaWithOptions(){
     var litersNew=l*1.1;
     var bigCanLP = parseInt((litersNew)/18);
     var smallCanLP = Math.ceil(((litersNew)%18)/3.6);
-    var message = "Apenas latas de 18L - "+bigCan+" latas (R$"+(bigCan*80)+")\n";
-    message+= "(Apenas galoes de 3.6L - "+smallCan+" latas (R$"+(smallCan*25)+")\n";
-    message+= "Misturando latas e galoes - "+bigCanLP+" latas e "+smallCanLP+" galoes (R$"+((bigCanLP*80)+(smallCanLP*25))+")";
+    var message = "Apenas latas de 18L - "+bigCan+" latas (R$"+(bigCan*bcp)+")\n";
+    message+= "(Apenas galoes de 3.6L - "+smallCan+" latas (R$"+(smallCan*scp)+")\n";
+    message+= "Misturando latas e galoes - "+bigCanLP+" latas e "+smallCanLP+" galoes (R$"+((bigCanLP*bcp)+(smallCanLP*scp))+")";
     alert(message);
 }
 btn17.addEventListener('click', calculateAreaWithOptions);
+//Décimo oitavo item
+var btn18 = document.getElementById('btn1-item18');
+function timeDownload(){
+    var sizeFile = Number(document.getElementById('n1-item18').value);
+    var speedDownload = Number(document.getElementById('n2-item18').value);
+    var timeEstimated = Math.round((sizeFile/(speedDownload/8))/60);
+    alert('O tempo estimado de download é de aproximadamente '+timeEstimated+" minutos.");
+}
+btn18.addEventListener('click', timeDownload);
