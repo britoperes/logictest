@@ -34,3 +34,5 @@ function validationSex(){
     }
 }
 btn3.addEventListener('click',validationSex);
+//Quarto item
+var bt
