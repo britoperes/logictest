@@ -35,4 +35,42 @@ function validationSex(){
 }
 btn3.addEventListener('click',validationSex);
 //Quarto item
-var bt
+var btn4 = document.getElementById('btn1-item4');
+function vOrC(){
+    var letter = document.getElementById('t1-item4').value;
+    var vowels = ['a','e','i','o','u'];
+    console.log(letter);
+    if (vowels.indexOf(letter)==-1){
+        alert('É consoante');
+    }else{
+        alert("É vogal!");
+    }
+}
+btn4.addEventListener('click', vOrC);
+//Quinto item
+var btn5 = document.getElementById('btn1-item5');
+function checkAverage(){
+    var scores = [];
+    scores.push(Number(document.getElementById('n1-item5').value));
+    scores.push(Number(document.getElementById('n2-item5').value));
+    var avg = (scores.reduce((a,b) => a+b, 0))/(scores.length);
+    if(avg == 10){
+        alert("Aprovado com Distinção!");
+    } else if (avg>=7 && avg <10){
+        alert("Aprovado");
+    } else {
+        alert("Reprovado");
+    }
+}
+btn5.addEventListener('click',checkAverage);
+//Sexto item
+var btn6 = document.getElementById('btn1-item6');
+function biggestNumber(){
+    var array = [];
+    array.push(Number(document.getElementById('n1-item6').value));
+    array.push(Number(document.getElementById('n2-item6').value));
+    array.push(Number(document.getElementById('n3-item6').value));
+    
+    alert(Math.max(array));
+}
+btn6.addEventListener('click', biggestNumber);
