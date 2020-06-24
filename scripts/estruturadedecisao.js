@@ -74,3 +74,47 @@ function biggestNumber(){
     alert(Math.max(array));
 }
 btn6.addEventListener('click', biggestNumber);
+//Setimo item
+var btn7 = document.getElementById('btn1-item7');
+function biggestMinorNumber(){
+    var array = [];
+    array.push(Number(document.getElementById('n1-item7').value));
+    array.push(Number(document.getElementById('n2-item7').value));
+    array.push(Number(document.getElementById('n3-item7').value));
+    var aux = array[0];
+    for(i of array){
+        if(i > aux){
+            aux = i;
+        }
+    }
+    alert('O maior número é '+aux);
+    aux = array[0];
+    for(i of array){
+        if(i < aux){
+            aux=i;
+        }
+    }
+    alert('O menor número é '+aux);
+}
+btn7.addEventListener('click',biggestMinorNumber);
+//Oitavo item
+var btn8 = document.getElementById('btn1-item8');
+function lowestPrice(){
+    var array = [];
+    array.push(Number(document.getElementById('n1-item8').value));
+    array.push(Number(document.getElementById('n2-item8').value));
+    array.push(Number(document.getElementById('n3-item8').value));
+    var aux = array[0]+1;
+    var position = 0;
+    for(var i = 0;i <array.length;i++){
+        if(array[i]<aux){
+            aux = array[i];
+            position = array.indexOf(aux);
+            console.log(position);
+            position++;
+            console.log(position);
+        }
+    }
+    alert('O produto mais barato é o '+position+' da lista custando '+aux);
+}
+btn8.addEventListener('click', lowestPrice);
