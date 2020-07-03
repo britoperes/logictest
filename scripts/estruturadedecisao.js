@@ -118,3 +118,37 @@ function lowestPrice(){
     alert('O produto mais barato é o '+position+' da lista custando '+aux);
 }
 btn8.addEventListener('click', lowestPrice);
+//Nono item
+var btn9 = document.getElementById('btn1-item9');
+function lToB(){
+    var array = [];
+    array.push(Number(document.getElementById('n1-item9').value));
+    array.push(Number(document.getElementById('n2-item9').value));
+    array.push(Number(document.getElementById('n3-item9').value));
+    array.sort(function(a,b){return b-a;});
+    //Explicação do array.sort() - http://www.javascriptkit.com/javatutors/arraysort.shtml
+    alert("Os numeros em ordem descrescente são:"+array[0]+", "+array[1]+ " e "+array[2]);
+}
+btn9.addEventListener('click', lToB);
+//Décimo item
+var btn10 = document.getElementById('btn1-item10');
+function idTurn(){
+    var turn = document.getElementById('t1-item10').value;
+    switch (turn) {
+        case 'M':
+            alert("Bom dia!");            
+            break;
+        case 'V':
+            alert("Boa tarde!");            
+            break;
+        case 'N':
+            alert("Boa noite!");            
+            break;
+    
+        default:
+            alert("Valor inválido!");
+            break;
+    }
+}
+btn10.addEventListener('click',idTurn);
+//Décimo primeiro item
