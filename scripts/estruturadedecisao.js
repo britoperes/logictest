@@ -625,3 +625,53 @@ function operacao(){
     }
 }
 btn24.addEventListener('click', operacao);
+//Vigesimo quinto item
+var btn25 = document.getElementById('btn1-item25');
+function matouOuNaoMatou(){
+    var possibilidades = [];
+    var eitaSeraQueMatou = 0;
+    possibilidades.push(document.getElementById('cb1-item25'));
+    possibilidades.push(document.getElementById('cb2-item25'));
+    possibilidades.push(document.getElementById('cb3-item25'));
+    possibilidades.push(document.getElementById('cb4-item25'));
+    possibilidades.push(document.getElementById('cb5-item25'));
+    for(possibilidade of possibilidades){
+        if(possibilidade.checked == true){
+            eitaSeraQueMatou++;
+        }
+    }
+    if(eitaSeraQueMatou<2){
+        alert("Classificação: Inocente");
+    } else if (eitaSeraQueMatou<3){
+        alert("Classificação: Suspeita")
+    } else if (eitaSeraQueMatou<5){
+        alert("Classificação: Cúmplice")
+    } else{
+        alert("Classificação: Assassino");
+    }
+}
+btn25.addEventListener('click', matouOuNaoMatou);
+//Vigesimo sexto item
+var btn26 = document.getElementById('btn1-item26');
+function fuel(){
+    var type = document.getElementById('t1-item26').value;
+    var qt = Number(document.getElementById('n1-item26').value);
+    var gasoline = 2.5;
+    var alcool = 1.9;
+    if(type=="A"){
+        if(qt<=20){
+            alert("O valor que será pago é R$"+((alcool*0.97)*qt));
+        } else {
+            alert("O valor que será pago é R$"+((alcool*0.95)*qt));
+        }
+    } else if (type=="G"){
+        if(qt<=20){
+            alert("O valor que será pago é R$"+((gasoline*0.96)*qt));
+        } else {
+            alert("O valor que será pago é R$"+((gasoline*0.94)*qt));
+        }
+    } else {
+        alert("Dados inválidos");
+    }
+}
+btn26.addEventListener('click', fuel);

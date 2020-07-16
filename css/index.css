@@ -6,6 +6,15 @@
     margin: 5px;
 }
 
+
+.checkbox{
+    margin: 3px;
+}
+
+.checkbox input{
+    margin: 0;
+}
+
 button{
     margin-top: 5px;
     max-width: 100px;
