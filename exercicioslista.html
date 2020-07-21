@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt_b[]r">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
     <title>Lista de exercícios do Japonês</title>
 </head>
+
 <body>
     <header>
         4. ExeciciosLista <br>
         <a href="./index.html">Voltar</a>
-        <a href="https://wiki.python.org.br/EstruturaDeRepeticao">Lista de exercícios</a>
+        <a href="https://wiki.python.org.br/ExerciciosListas">Lista de exercícios</a>
     </header>
     <main>
-      
+
         <li class="item">
             1. Faça um Programa que leia um vetor de 5 números inteiros e mostre-os
-            <button id="btn1-item1" onclick="ex1()" >Executar</button>
+            <button id="btn1-item1" onclick="ex1()">Executar</button>
         </li>
 
         <li class="item">
@@ -29,10 +31,200 @@
         </li>
 
         <li class="item">
-            4. Faça um Programa que leia um vetor de 10 caracteres, e diga quantas consoantes foram lidas. Imprima as consoantes.
+            4. Faça um Programa que leia um vetor de 10 caracteres, e diga quantas consoantes foram lidas. Imprima as
+            consoantes.
             <button onclick="ex4()">Executar</button>
         </li>
-    </main> 
-    <script src="./scripts/exercicioslista.js"></script>   
+
+        <li class="item">
+            5. Faça um Programa que leia 10 (Eram 20) números inteiros e armazene-os num vetor. Armazene os números
+            pares no vetor PAR e os números IMPARES no vetor impar. Imprima os três vetores.
+            <button onclick='ex5()'>Executar</button>
+        </li>
+
+        <li class="item">
+            6. Faça um Programa que peça as quatro notas de 4 alunos (eram 10), calcule e armazene num vetor a média de
+            cada aluno, imprima o número de alunos com média maior ou igual a 7.0.
+            <button onclick="ex6()">Executar</button>
+        </li>
+
+        <li class="item">
+            7. Faça um Programa que leia um vetor de 5 números inteiros, mostre a soma, a multiplicação e os números.
+            <button onclick="ex7()">Executar</button>
+        </li>
+
+        <li class="item">
+            8. Faça um Programa que peça a idade e a altura de 5 pessoas, armazene cada informação no seu respectivo
+            vetor. Imprima a idade e a altura na ordem inversa a ordem lida.
+            <button onclick="ex8()">Executar</button>
+        </li>
+
+        <li class="item">
+            9. Faça um Programa que leia um vetor A com 10 números inteiros, calcule e mostre a soma dos quadrados dos
+            elementos do vetor.
+            <button onclick="ex9()">Executar</button>
+        </li>
+
+        <li class="item">
+            10. Faça um Programa que leia dois vetores com 10 elementos cada. Gere um terceiro vetor de 20 elementos,
+            cujos valores deverão ser compostos pelos elementos intercalados dos dois outros vetores.
+            <button onclick="ex10()">Executar</button>
+        </li>
+
+        <li class="item">
+            11. Altere o programa anterior, intercalando 3 vetores de 10 elementos cada.
+            <button onclick="ex11()">Duvido voce me clicar</button>
+        </li>
+
+        <li class="item">
+            12. Foram anotadas as idades e alturas de 30 alunos. Faça um Programa que determine quantos alunos com mais
+            de 13 anos possuem altura inferior à média de altura desses alunos.
+            <button onclick="ex12()">Executare</button>
+        </li>
+
+        <li class="item">
+            13. Faça um programa que receba a temperatura média de cada mês do ano e armazene-as em uma lista. Após
+            isto, calcule a média anual das temperaturas e mostre todas as temperaturas acima da média anual, e em que
+            mês elas ocorreram (mostrar o mês por extenso: 1 – Janeiro, 2 – Fevereiro, . . . ).
+            <button onclick="ex13()">Run it mothafucker</button>
+        </li>
+
+        <li class="item">
+            14. Utilizando listas faça um programa que faça 5 perguntas para uma pessoa sobre um crime. As perguntas
+            são:
+            "Telefonou para a vítima?"
+            "Esteve no local do crime?"
+            "Mora perto da vítima?"
+            "Devia para a vítima?"
+            "Já trabalhou com a vítima?" O programa deve no final emitir uma classificação sobre a participação da
+            pessoa no crime. Se a pessoa responder positivamente a 2 questões ela deve ser classificada como "Suspeita",
+            entre 3 e 4 como "Cúmplice" e 5 como "Assassino". Caso contrário, ele será classificado como "Inocente".
+            <button onclick="ex14()">Executa ai bro</button>
+        </li>
+
+        <li class="item">
+            15. Faça um programa que leia um número indeterminado de valores, correspondentes a notas, encerrando a
+            entrada de dados quando for informado um valor igual a -1 (que não deve ser armazenado). Após esta entrada
+            de dados, faça:
+            <ul>
+                <li>Mostre a quantidade de valores que foram lidos;</li>
+                <li>Exiba todos os valores na ordem em que foram informados, um ao lado do outro;</li>
+                <li>Exiba todos os valores na ordem inversa à que foram informados, um abaixo do outro;</li>
+                <li>Calcule e mostre a soma dos valores;</li>
+                <li>Calcule e mostre a média dos valores;</li>
+                <li>Calcule e mostre a quantidade de valores acima da média calculada;</li>
+                <li>Calcule e mostre a quantidade de valores abaixo de sete;</li>
+                <li>Encerre o programa com uma mensagem;</li>
+            </ul>
+            <button onclick="ex15()">Run it</button>
+        </li>
+
+        <li class="item">
+            16. Utilize uma lista para resolver o problema a seguir. Uma empresa paga seus vendedores com base em
+            comissões. O vendedor recebe $200 por semana mais 9 por cento de suas vendas brutas daquela semana. Por
+            exemplo, um vendedor que teve vendas brutas de $3000 em uma semana recebe $200 mais 9 por cento de $3000, ou
+            seja, um total de $470. Escreva um programa (usando um array de contadores) que determine quantos vendedores
+            receberam salários nos seguintes intervalos de valores:
+            <ul>
+                <li>$200 - $299</li>
+                <!--Intervalo1-->
+                <li>$300 - $399</li>
+                <!--Intervalo2-->
+                <li>$400 - $499</li>
+                <!--Intervalo3-->
+                <li>$500 - $599</li>
+                <!--Intervalo4-->
+                <li>$600 - $699</li>
+                <!--Intervalo5-->
+                <li>$700 - $799</li>
+                <!--Intervalo6-->
+                <li>$800 - $899</li>
+                <!--Intervalo7-->
+                <li>$900 - $999</li>
+                <!--Intervalo8-->
+                <li>$1000 em diante</li>
+                <!--Intervalo9-->
+            </ul>
+            Desafio: Crie uma fórmula para chegar na posição da lista a partir do salário, sem fazer vários ifs
+            aninhados.
+            <button onclick="ex16()">Bota pra quebrar</button>
+        </li>
+
+        <li class="item">
+            17. Em uma competição de salto em distância cada atleta tem direito a cinco saltos. O resultado do atleta
+            será determinado pela média dos cinco valores restantes. Você deve fazer um programa que receba o nome e as
+            cinco distâncias alcançadas pelo atleta em seus saltos e depois informe o nome, os saltos e a média dos
+            saltos. O programa deve ser encerrado quando não for informado o nome do atleta. A saída do programa deve
+            ser conforme o exemplo abaixo:
+            <pre>
+                Atleta: Rodrigo Curvêllo
+                
+                Primeiro Salto: 6.5 m
+                Segundo Salto: 6.1 m
+                Terceiro Salto: 6.2 m
+                Quarto Salto: 5.4 m
+                Quinto Salto: 5.3 m
+                
+                Resultado final:
+                Atleta: Rodrigo Curvêllo
+                Saltos: 6.5 - 6.1 - 6.2 - 5.4 - 5.3
+                Média dos saltos: 5.9 m
+            </pre>
+            <button onclick="ex17()">Vai meu filho</button>
+        </li>
+
+        <li class="item">
+            18.Uma grande emissora de televisão quer fazer uma enquete entre os seus telespectadores para saber qual o
+            melhor jogador após cada jogo. Para isto, faz-se necessário o desenvolvimento de um programa, que será
+            utilizado pelas telefonistas, para a computação dos votos. Sua equipe foi contratada para desenvolver este
+            programa, utilizando a linguagem de programação C++. Para computar cada voto, a telefonista digitará um
+            número, entre 1 e 23, correspondente ao número da camisa do jogador. Um número de jogador igual zero, indica
+            que a votação foi encerrada. Se um número inválido for digitado, o programa deve ignorá-lo, mostrando uma
+            breve mensagem de aviso, e voltando a pedir outro número. Após o final da votação, o programa deverá exibir:
+            <ul>
+                <li>O total de votos computados;</li>
+                <li>Os númeos e respectivos votos de todos os jogadores que receberam votos;</li>
+                <li>O percentual de votos de cada um destes jogadores;</li>
+                <li>O número do jogador escolhido como o melhor jogador da partida, juntamente com o número de votos e o
+                    percentual de votos dados a ele.</li>
+            </ul>
+            Observe que os votos inválidos e o zero final não devem ser computados como votos. O resultado aparece
+            ordenado pelo número do jogador. O programa deve fazer uso de arrays. O programa deverá executar o cálculo
+            do percentual de cada jogador através de uma função. Esta função receberá dois parâmetros: o número de votos
+            de um jogador e o total de votos. A função calculará o percentual e retornará o valor calculado. Abaixo
+            segue uma tela de exemplo. O disposição das informações deve ser o mais próxima possível ao exemplo. Os
+            dados são fictícios e podem mudar a cada execução do programa. Ao final, o programa deve ainda gravar os
+            dados referentes ao resultado da votação em um arquivo texto no disco, obedecendo a mesma disposição
+            apresentada na tela.
+            <pre>
+            Enquete: Quem foi o melhor jogador?
+            
+            Número do jogador (0=fim): 9
+            Número do jogador (0=fim): 10
+            Número do jogador (0=fim): 9
+            Número do jogador (0=fim): 10
+            Número do jogador (0=fim): 11
+            Número do jogador (0=fim): 10
+            Número do jogador (0=fim): 50
+            Informe um valor entre 1 e 23 ou 0 para sair!
+            Número do jogador (0=fim): 9
+            Número do jogador (0=fim): 9
+            Número do jogador (0=fim): 0
+            
+            Resultado da votação:
+            
+            Foram computados 8 votos.
+            
+            Jogador Votos           %
+            9               4               50,0%
+            10              3               37,5%
+            11              1               12,5%
+            O melhor jogador foi o número 9, com 4 votos, correspondendo a 50% do total de votos.
+        </pre>
+            <button onclick="ex18()">E que comecem os jogos</button>
+        </li>
+    </main>
+    <script src="./scripts/exercicioslista.js"></script>
 </body>
+
 </html>
