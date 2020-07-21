@@ -301,7 +301,42 @@
                 <button id="btn1-item26">Executar</button>
             </li>
 
-            <!--Faltam 2 itens-->
+            <li class="item">
+                27. Uma fruteira está vendendo frutas com a seguinte tabela de preços:
+                <pre>
+                Até 5 Kg                Acima de 5 Kg
+Morango         R$ 2,50 por Kg          R$ 2,20 por Kg
+Maçã            R$ 1,80 por Kg          R$ 1,50 por Kg</pre>
+                Se o cliente comprar mais de 8 Kg em frutas ou o valor total da compra ultrapassar R$ 25,00, receberá ainda um desconto de 10% sobre este total. Escreva um algoritmo para ler a quantidade (em Kg) de morangos e a quantidade (em Kg) de maças adquiridas e escreva o valor a ser pago pelo cliente.
+                <input type="number" placeholder="Insira a quantidade de Morango" id="n1-item27">
+                <input type="number" placeholder="Insira a quantidade de Maça" id="n2-item27">
+                <button onclick="ex27()">Executar</button>
+            </li>
+
+            <li class="item">
+                28. O Hipermercado Tabajara está com uma promoção de carnes que é imperdível. Confira:
+                <pre>
+                Até 5 Kg                Acima de 5 Kg
+File Duplo      R$ 4,90 por Kg          R$ 5,80 por Kg
+Alcatra         R$ 5,90 por Kg          R$ 6,80 por Kg
+Picanha         R$ 6,90 por Kg          R$ 7,80 por Kg</pre>
+Para atender a todos os clientes, cada cliente poderá levar apenas um dos tipos de carne da promoção, porém não há limites para a quantidade de carne por cliente. Se compra for feita no cartão Tabajara o cliente receberá ainda um desconto de 5% sobre o total da compra. Escreva um programa que peça o tipo e a quantidade de carne comprada pelo usuário e gere um cupom fiscal, contendo as informações da compra: tipo e quantidade de carne, preço total, tipo de pagamento, valor do desconto e valor a pagar.
+                <div>
+                    <input type="radio" name="opcoes" id="radio1">
+                    <label for="radio1">File Duplo</label>
+                    <input type="radio" name="opcoes" id="radio2">
+                    <label for="radio2">Alcatra</label>
+                    <input type="radio" name="opcoes" id="radio3">
+                    <label for="radio3">Picanha</label>
+                </div>
+                <input type="number" placeholder="Insira a quantidade comprada"  id="n1-item28">
+                <div class="checkbox">
+                    <input type="checkbox" name="opt4" id="check1">
+                    <label for="opt4">Pagamento com Cartão Tabajara</label>
+                </div>
+                
+                <button onclick="ex28()">Executar</button>
+            </li>
     </main> 
     <script src="/scripts/estruturadedecisao.js"></script>   
 </body>

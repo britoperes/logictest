@@ -675,3 +675,63 @@ function fuel(){
     }
 }
 btn26.addEventListener('click', fuel);
+//Vigesimo setimo item
+const ex27 = ()=>{
+    let morango = Number(parseFloat(document.getElementById("n1-item27").value))
+    let maca = Number(parseFloat(document.getElementById("n2-item27").value))
+    let valorFinal = 0;
+    let quantidadeFinal = 0;
+
+    if(morango<5){
+        valorFinal+= morango*2.5
+        quantidadeFinal+=morango
+    } else {
+        valorFinal+= morango*2.2
+        quantidadeFinal+=morango
+    }
+    
+    if(maca<5){
+        valorFinal+= maca*1.8
+        quantidadeFinal+=maca
+    } else {
+        valorFinal+= maca*1.5
+        quantidadeFinal+=maca
+    }
+
+    if(quantidadeFinal>8){
+        valorFinal*= 0.9
+    }
+    alert(`O valor total a ser pago é R$${valorFinal}`)
+}
+//
+const ex28 = ()=>{
+    let qtd = Number(parseFloat(document.getElementById("n1-item28").value))
+    let valorFinal = 0;
+    if(document.getElementById("radio1").checked==true){
+        if(qtd>5){
+            valorFinal = qtd*5.8
+        } else {
+            valorFinal = qtd*4.9
+        }
+    }
+    if(document.getElementById("radio2").checked==true){
+        if(qtd>5){
+            valorFinal = qtd*6.8
+        } else {
+            valorFinal = qtd*5.9
+        }
+    }
+    if(document.getElementById("radio3").checked==true){
+        if(qtd>5){
+            valorFinal = qtd*7.8
+        } else {
+            valorFinal = qtd*6.9
+        }
+    }
+    console.log(document.getElementById("check1").checked)
+    console.log(document.getElementById("check1"))
+    if(document.getElementById("check1").checked==true){
+        valorFinal*= 0.95
+    }
+    alert(`O valor a ser pago é R$${valorFinal}`)
+}
