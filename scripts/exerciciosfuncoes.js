@@ -199,3 +199,91 @@ const ex10 = ()=>{
           }
       }
 }
+
+const ex11=()=>{
+
+        //Data com mês por extenso. Construa uma função que receba uma data no formato DD/MM/AAAA e devolva uma string no formato D de mesPorExtenso de AAAA. Opcionalmente, valide a data e retorne NULL caso a data seja inválida.
+        const data = window.prompt('informe a data no padrão DD/MM/AAAA')
+
+        const splitData= data.split('');
+
+        
+
+        // const splitData= data.split('/')
+
+        // const validateDay=(day)=>{
+        //     if(day>0 && day<=31){
+        //         return true
+        //     }
+        //     return false
+        // }
+
+        // const validateMoth =(month)=>{
+        //     if( month>0 && month<=12){
+        //         return true
+        //     }
+        //     return false
+        // }
+       
+        // const validateYear=(year)=>{
+        //     if(year.length!=4){
+        //         return false
+        //     }
+        //     return true
+        // }
+
+        // const validaData =()=>{
+            
+        //     if( !validateDay(parseInt(splitData[0]))){
+        //         return false;
+        //     }
+
+        //     if( !validateMoth(parseInt(splitData[1]))){
+        //         return false;
+        //     }
+
+        //     if( !validateYear(splitData[2])){
+        //         return false;
+        //     }
+
+        //     return true;
+        // }
+
+        // const convertMonth = (month)=>{
+        //     let textMonth=''
+
+        //     switch(month){
+        //         case "01": textMonth='Janneiro'; break;
+        //         case "02": textMonth="Fevereiro";break;
+        //         case "03": textMonth="Março";break;
+        //         case "04": textMonth="Abril";break;
+        //         case "05": textMonth="Maio";break;
+        //         case "06": textMonth="Junho";break;
+        //         case "07": textMonth="Julho";break;
+        //         case "08": textMonth="Agosto";break;
+        //         case "09": textMonth="Setembro";break;
+        //         case "10": textMonth="Outubro";break;
+        //         case "11": textMonth="Novembro";break;
+        //         case "12": textMonth="Dezembro"; break;
+
+        //         default: break;
+        //     }
+
+        //     return textMonth
+
+        // }
+
+        // if(validaData()){
+        //     const monthText= convertMonth(splitData[1]);
+        //     alert(`${splitData[0]} de ${monthText} de ${splitData[2]}`)
+        // }else{
+        //     alert('NULL')
+        //     return ex11()
+        // }
+
+
+      
+
+
+}
+
